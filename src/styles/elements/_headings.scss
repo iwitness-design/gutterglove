@@ -1,0 +1,51 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.166rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.c-heading {
+  position: relative;
+
+  &--border {
+    padding-bottom: 1.72rem;
+
+    &::after {
+      content: '';
+      background-color: $color-crimson;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 74px;
+      height: 6px;
+    }
+  }
+}

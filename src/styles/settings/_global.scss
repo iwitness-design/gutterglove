@@ -1,0 +1,69 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+/* Fonts
+   ========================================================================== */
+
+$font-sans-serif: 'Titillium Web', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif !default;
+$font-regular: 400;
+$font-bold: 700;
+
+/* Breakpoints
+   ========================================================================== */
+
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-full: 1600px;
+
+/* Layout
+   ========================================================================== */
+
+$layout-width: 1440px;
+$gutter: 1.875rem;
+$gutter-content: 1.36rem;
+
+/* Colors
+   ========================================================================== */
+
+// Colors shouldn't be used directly but reassigned
+$color-white: #fff;
+$color-white-50: rgba(255, 255, 255, 0.5);
+$color-white-25: rgba(255, 255, 255, 0.25);
+$color-black: #000;
+$color-silver: #ccc;
+$color-silver-50: rgba(204, 204, 204, 0.5);
+$color-light-grey: #999;
+$color-medium-grey: #666;
+$color-dark-grey: #333;
+$color-cod-gray: #151414;
+$color-cod-gray-70: rgba(21, 20, 20, 0.7);
+$color-gondola: #1b1a1a;
+$color-crimson: #e62525;
+$color-mine-shaft: #222121;
+$color-alto: #d3d3d3;
+$color-alto-10: rgba(211, 211, 211, 0.2);
+$color-seashell: #f1f1f1;
+$color-eternity: #120d08;
+$color-silver-chalice: #b1b1b1;
+
+// Text
+$color-bg: $color-white;
+$color-text: $color-eternity;
+
+// Links
+$color-link: $color-white;
+$color-hover: darken( $color-white, 20% );
+
+// Borders
+$color-border: $color-silver;
+
+// Fills
+$color-fill: $color-silver;

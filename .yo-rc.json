@@ -1,0 +1,18 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Gutterglove",
+      "author": "iWitness Design",
+      "projectType": "fe",
+      "nameSlug": "gutterglove",
+      "nameCamel": "Gutterglove",
+      "chiselVersion": "0.14.0",
+      "has_jquery": false
+    },
+    "pages": [
+      "Home",
+      "Blog",
+      "Blog - Single"
+    ]
+  }
+}

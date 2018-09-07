@@ -1,0 +1,64 @@
+/* ==========================================================================
+   #TESTIMONIAL
+   ========================================================================== */
+
+.c-testimonial {
+  margin: 5rem 0 6rem;
+
+  &__heading {
+    text-align: center;
+    font-weight: $font-regular;
+    font-size: 2.27rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 1.11409rem;
+    margin-bottom: 0.6rem;
+  }
+
+  &__list-heading {
+    color: $color-crimson;
+    font-size: 1.1836rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.1836rem;
+    letter-spacing: 0.01em;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .o-layout {
+    display: block;
+
+    @include bp-large {
+      display: flex;
+    }
+  }
+
+  .o-layout__item {
+    width: 100%;
+    margin: 0 20px 1.5rem;
+
+    @include bp-large {
+      width: 32%;
+      margin-bottom: 0;
+      max-width: 280px;
+    }
+  }
+}
+
+
+// Stars Rating
+.c-rating {
+  font-size: 1.5rem;
+  margin: 0;
+
+  @include bp-medium {
+    font-size: 1.8181rem;
+  }
+}

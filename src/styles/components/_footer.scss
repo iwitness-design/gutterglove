@@ -1,0 +1,102 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+.c-footer {
+  background-color: $color-mine-shaft;
+  color: $color-white;
+
+  &__top {
+    text-align: center;
+
+    .c-footer__heading {
+      font-size: 2.2954rem;
+      font-weight: $font-regular;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.36rem;
+      max-width: 550px;
+      margin: 0 auto 1.36rem;
+      line-height: 33px;
+      letter-spacing: 0.02em;
+    }
+
+    .c-more {
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__border {
+    padding: 60px 0;
+    margin: 0 60px;
+    border-bottom: 1px solid $color-silver-50;
+  }
+
+  &__bottom {
+    padding-top: 3.63rem;
+    padding-bottom: 1.8rem;
+  }
+
+  &__cols {
+    justify-content: center;
+  }
+
+  &__col {
+    max-width: 270px;
+    margin: 0 4%;
+    color: $color-alto;
+    font-size: 0.81rem;
+    line-height: 1.6;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      max-width: 158px;
+    }
+
+    .c-footer__heading {
+      color: $color-white;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+  }
+
+  &__text {
+    color: $color-white-50;
+    font-size: 0.53409rem;
+    line-height: 1.6;
+  }
+
+  .c-sitename {
+    margin-bottom: 1.09rem;
+    height: 35px;
+  }
+
+  address {
+    font-style: normal;
+    margin: 1rem 0 0;
+  }
+
+  &__nav {
+    line-height: 1.15;
+    margin-top: 0.5rem;
+  }
+
+  &__copyright {
+    background-color: $color-cod-gray;
+    color: $color-alto-10;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}

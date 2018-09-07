@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #SOCIAL ICONS
+   ========================================================================== */
+
+.c-social-icons {
+  display: flex;
+  margin-bottom: 1.09rem;
+
+  &__icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+    border: 1px solid $color-crimson;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    margin-right: 12px;
+    transition: $global-transition;
+
+    &--fb {
+      background-image: url('../assets/icons/ico-facebook.svg');
+      background-size: auto 20px;
+    }
+
+    &--li {
+      background-image: url('../assets/icons/ico-linkedin.svg');
+      background-size: 18px;
+    }
+
+    &--yt {
+      background-image: url('../assets/icons/ico-youtube.svg');
+    }
+
+    &:hover,
+    &:focus {
+      border-color: darken($color-crimson, 10%);
+      opacity: 0.8;
+    }
+  }
+}

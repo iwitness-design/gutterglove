@@ -1,0 +1,75 @@
+/* ==========================================================================
+   #NAVIGATION
+   ========================================================================== */
+
+.c-nav {
+  font-size: 0.7727rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+
+  @include bp-medium {
+    font-size: 0.65rem;
+    margin-left: 10px;
+  }
+
+  @include bp-large {
+    font-size: 0.7727rem;
+  }
+
+  &.is-active {
+    ul {
+      display: block;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+
+    @include bp-medium-max {
+      margin-top: 10px;
+    }
+
+    @include bp-medium {
+      display: block;
+    }
+  }
+
+  .menu-item {
+    display: inline-block;
+    margin: 0;
+    opacity: 0.85;
+    border-right: 1px solid $color-white-25;
+
+    @include bp-medium-max {
+      display: block;
+      border: 0;
+    }
+
+    @include bp-medium {
+      padding: 0 12px;
+    }
+
+    @include bp-large {
+      padding: 0 26px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border: 0;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include bp-medium-max {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+}

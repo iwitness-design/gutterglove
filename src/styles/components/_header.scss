@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+
+.c-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .o-layout {
+    align-items: center;
+  }
+
+  &__top,
+  &__bottom {
+    padding: 1rem 1.25rem;
+
+    @include bp-medium {
+      padding: 0 1.875rem;
+    }
+  }
+
+  &__top {
+    background-color: $color-cod-gray-70;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    @include bp-medium {
+      padding-top: 0;
+      padding-bottom: 0.25rem;
+    }
+
+    a {
+      font-size: 0.681rem;
+      color: $color-white-50;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    background-color: $color-cod-gray;
+
+    @include bp-medium {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+.c-sitename {
+  background: url('../assets/images/logo.png') no-repeat left top;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 30px;
+}

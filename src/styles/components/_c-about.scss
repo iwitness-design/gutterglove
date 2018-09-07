@@ -1,0 +1,84 @@
+/* ==========================================================================
+   #ABOUT
+   ========================================================================== */
+
+.c-about {
+  position: relative;
+  padding-top: 5.45rem;
+  padding-bottom: 5rem;
+
+  &__col {
+    @include bp-medium {
+      max-width: 382px;
+    }
+
+    @include bp-large {
+      margin-right: 5%;
+    }
+
+    &:first-child {
+      margin-bottom: 3rem;
+
+      @include bp-medium {
+        margin-right: 10%;
+        margin-bottom: 0;
+      }
+
+      @include bp-large {
+        margin-right: 5%;
+        max-width: 30%;
+      }
+
+      @include bp-xlarge {
+        margin-left: 10%;
+        max-width: 280px;
+      }
+    }
+
+    > p {
+      line-height: 1.35;
+    }
+  }
+
+  &__heading {
+    font-size: 2.2727rem;
+    font-weight: $font-regular;
+    line-height: 1;
+  }
+
+  &__image {
+    display: none;
+    position: absolute;
+    margin-right: 50%;
+    right: -50vw;
+    top: 0;
+    width: 30%;
+    max-width: 445px;
+
+    @include bp-large {
+      display: block;
+    }
+  }
+}
+
+.c-image-text {
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-bottom: 1.27rem;
+
+    img {
+      border: 1px solid $color-crimson;
+      border-radius: 50%;
+      margin-right: 1.909rem;
+      max-width: 98px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

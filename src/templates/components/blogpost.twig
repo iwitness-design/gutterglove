@@ -1,0 +1,18 @@
+<article class="c-blogpost">
+  <img class="c-blogpost__image c-blogpost__image--fullwidth" src="https://source.unsplash.com/1380x720/?architecture,people,nature" alt="" />
+  <div class="c-blogpost__content">
+    {% if pageName == 'Home' %}
+    <span class="c-blogpost__category">ABOUT GUTTER GUARDS</span>
+    {% else %}
+    <span class="c-blogpost__date">April 19, 2018</span>
+    {% endif %}
+    <h2 class="c-blogpost__heading"><a href="#">Avoiding Damage of Clogged Gutters</a></h2>
+    <p class="c-blogpost__text">When water is not diverted properly away from your home through your gutters, it can have serious consequences. Clogged gutters can impact your entire home resulting in serious damages.</p>
+    <div class="c-blogpost__links o-layout">
+      <a href="#" class="c-link--red is-chevron">Read Article</a>
+      {% if pageName == 'Home' %}
+      <a href="#" class="c-link--red is-chevron">View All</a>
+      {% endif %}
+    </div>
+  </div>
+</article>

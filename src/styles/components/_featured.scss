@@ -1,0 +1,91 @@
+/* ==========================================================================
+   #FEATURED BOX
+   ========================================================================== */
+
+.c-featured {
+  background-color: $color-seashell;
+  min-height: 382px;
+  position: relative;
+  padding: 2.272rem;
+  margin-bottom: $gutter-content;
+
+  &__content {
+    position: relative;
+    line-height: 1.25;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+
+    &--right {
+      right: 0;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--fw {
+      position: relative;
+    }
+  }
+
+  &__heading {
+    font-weight: $font-regular;
+    font-size: 2.2963rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.36rem;
+  }
+
+  &--box {
+
+    .c-featured__content {
+      max-width: 442px;
+    }
+  }
+
+  &--fullwidth {
+    min-height: 435px;
+
+    @include bp-large {
+      height: 870px;
+    }
+
+    .c-featured__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 620px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+
+      @include bp-large {
+        left: auto;
+        right: 4.09rem;
+      }
+    }
+
+    p {
+      font-size: 1.5909rem;
+    }
+  }
+
+  &--bg-img {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include bp-large {
+      background-size: auto;
+    }
+  }
+}

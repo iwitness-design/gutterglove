@@ -1,0 +1,78 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: 0.3rem 1rem;
+  transition: $global-transition;
+
+  &__chevron {
+    padding-right: 1.2rem;
+
+    &::after {
+      content: '';
+      border-style: solid;
+    	border-width: 2px 2px 0 0;
+    	display: inline-block;
+    	height: 8px;
+      width: 8px;
+    	left: 6px;
+      top: -1px;
+    	position: relative;
+    	transform: rotate(45deg);
+      vertical-align: middle;
+    }
+  }
+}
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+  background-color: $color-crimson;
+  font-size: 0.9rem;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-crimson, 5%);
+  }
+}
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  padding: 0.2rem 0.5rem;
+}
+
+.c-btn--large {
+  padding: 0.75rem 1.5rem;
+}
