@@ -32,14 +32,14 @@
     &::after {
       content: '';
       border-style: solid;
-    	border-width: 2px 2px 0 0;
-    	display: inline-block;
-    	height: 8px;
+      border-width: 2px 2px 0 0;
+      display: inline-block;
+      height: 8px;
       width: 8px;
-    	left: 6px;
+      left: 6px;
       top: -1px;
-    	position: relative;
-    	transform: rotate(45deg);
+      position: relative;
+      transform: rotate(45deg);
       vertical-align: middle;
     }
   }
@@ -64,6 +64,11 @@
   &:focus {
     background-color: darken($color-crimson, 5%);
   }
+}
+
+.c-btn--bordered {
+  background-color: transparent;
+  border: 1px solid $color-crimson;
 }
 
 /* Size variants

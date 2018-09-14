@@ -3,5 +3,90 @@
    ========================================================================== */
 
 .c-slider {
-  padding: 0 10%;
+  position: relative;
+
+  &--carousel {
+
+    .c-slider__col {
+      padding: 0 60px;
+    }
+  }
+
+  &__wrapper {
+
+
+  }
+
+  &__frame {
+
+  }
+
+  &__col-wrapper {
+    max-width: 310px;
+  }
+
+  &__chevron {
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    bottom: 0;
+
+    &::after {
+      content: '';
+      border-color: $color-silver-chalice;
+      border-style: solid;
+      border-width: 1px 1px 0 0;
+      display: inline-block;
+      height: 22px;
+      width: 22px;
+      transform: rotate(45deg);
+      vertical-align: middle;
+    }
+  }
+
+  &__left {
+    left: 0;
+
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  &__right {
+    right: 0;
+  }
+
+  &--fullwidth {
+    .c-slider {
+      &__controls-wrap {
+        align-items: center;
+        display: flex;
+      }
+
+      &__chevron {
+        position: static;
+        max-height: 30px;
+
+        &::after {
+          border-color: $color-crimson;
+          height: 10px;
+          width: 10px;
+        }
+      }
+
+      &__right {
+        left: 32%;
+      }
+    }
+
+    .c-blogpost__category {
+      margin-right: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
 }

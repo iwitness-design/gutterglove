@@ -2,9 +2,21 @@
    #ARTICLE
    ========================================================================== */
 
+.o-wrapper__article {
+
+  @include bp-xlarge {
+    position: relative;
+  }
+}
+
 .c-article {
   max-width: 970px;
   margin: 1.75rem auto 0;
+  position: relative;
+
+  @include bp-xlarge {
+    position: static;
+  }
 
   img {
     width: 100%;
@@ -32,5 +44,39 @@
 
   h2 {
     margin-bottom: 0.5rem;
+  }
+
+  &__social {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    text-align: center;
+
+    @include bp-medium-max {
+      top: -40px;
+    }
+
+    @include bp-xlarge {
+      top: 0;
+      left: 55px;
+    }
+
+    .c-social-icons {
+      flex-direction: row;
+      align-items: center;
+
+      @include bp-xlarge {
+        flex-direction: column;
+      }
+
+      &__icon {
+        opacity: 0.6;
+        margin: 0;
+
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+    }
   }
 }

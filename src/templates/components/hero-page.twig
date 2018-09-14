@@ -1,6 +1,10 @@
 <div class="c-hero c-hero--page {% if pageName == 'Blog' %}c-hero--content-overlap{% endif %}">
   <div class="c-hero__wrap">
-    <img class="c-hero__image" src="https://via.placeholder.com/1920x800" alt="" />
+    {% if pageName == 'Blog - Single' %}
+    <img class="c-hero__image" src="assets/images/temp/home-about.jpg" alt="" />
+    {% else %}
+    <img class="c-hero__image" src="assets/images/temp/hero-blog.jpg" alt="" />
+    {% endif %}
     <div class="c-hero__content">
       {% if pageName == 'Blog - Single' %}
         <div class="c-hero__caption  c-hero__caption--border">

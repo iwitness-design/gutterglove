@@ -59,6 +59,32 @@
       display: block;
     }
   }
+
+  &--2cols {
+
+    @include bp-medium {
+      padding-top: 9rem;
+      padding-bottom: 8rem;
+    }
+
+    .c-about__col {
+      flex: none;
+
+      @include bp-medium {
+        max-width: 580px;
+        width: 50%;
+      }
+    }
+
+    .c-about__image {
+      max-width: 600px;
+      width: 50%;
+
+      @include bp-medium {
+        display: block;
+      }
+    }
+  }
 }
 
 .c-image-text {

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #STORES LOGOS
+   ========================================================================== */
+
+.c-stores {
+  &__item {
+    padding: 0 10px;
+
+    @include bp-medium-max {
+      padding-bottom: 40px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    transition: $global-transition;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+
+  &__logo-wrap {
+    background-color: $color-white;
+    padding: 1rem;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    object-fit: contain;
+  }
+
+  .c-btn {
+    display: block;
+  }
+}

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   #PRODUCTS
+   ========================================================================== */
+
+.c-products {
+  &__featured-cols {
+    position: relative;
+    text-align: center;
+    margin-top: -5.909rem;
+    margin-bottom: 5.909rem;
+
+    .o-layout__item {
+
+      @include bp-medium-max {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .c-image {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+
+      @include bp-large {
+        width: 208px;
+        height: 208px;
+      }
+    }
+
+    p {
+      max-width: 250px;
+      margin: 1.5rem auto 0;
+      line-height: 1.25;
+      padding: 0 16px;
+
+      @include bp-large {
+        padding: 0;
+      }
+    }
+  }
+
+  &__request {
+    input,
+    textarea {
+      background-color: transparent;
+    }
+  }
+
+  &__featured-bg-img {
+    background-size: 600px;
+
+    @include bp-medium-max {
+      padding-top: 10rem;
+    }
+
+    @include bp-medium {
+      background-size: 60%;
+    }
+
+    @include bp-large {
+      background-size: auto;
+    }
+  }
+}

@@ -33,6 +33,10 @@
   {% block hero %}
     {% if pageName == 'Home' %}
       {% include 'components/hero.twig' %}
+    {% elseif pageName == 'Contact' %}
+      {% include 'components/hero-contact.twig' %}
+    {% elseif pageName == 'Products' %}
+      {% include 'components/hero-products.twig' %}
     {% else %}
       {% include 'components/hero-page.twig' %}
     {% endif %}

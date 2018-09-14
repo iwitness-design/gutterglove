@@ -12,18 +12,17 @@ a {
   }
 
   &.is-chevron {
-
     &::after {
       content: '';
       border-style: solid;
-    	border-width: 2px 2px 0 0;
-    	display: inline-block;
-    	height: 8px;
+      border-width: 2px 2px 0 0;
+      display: inline-block;
+      height: 8px;
       width: 8px;
-    	left: 6px;
+      left: 6px;
       top: -1px;
-    	position: relative;
-    	transform: rotate(45deg);
+      position: relative;
+      transform: rotate(45deg);
       vertical-align: middle;
     }
 
@@ -35,13 +34,13 @@ a {
       &::before {
         content: '';
         border-style: solid;
-      	border-width: 2px 2px 0 0;
-      	display: inline-block;
-      	height: 8px;
+        border-width: 2px 2px 0 0;
+        display: inline-block;
+        height: 8px;
         width: 8px;
-      	left: 0;
+        left: 0;
         top: -2px;
-      	position: relative;
+        position: relative;
         vertical-align: middle;
         margin-right: 8px;
         transform: rotate(-135deg);
@@ -65,10 +64,14 @@ a {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 28px auto;
-    padding-right: 40px
+    padding-right: 40px;
   }
 
   &--icon-subscribe {
     background-image: url('../assets/icons/ico-subscribe.svg');
+  }
+
+  &--chevron {
+    @extend a.is-chevron;
   }
 }

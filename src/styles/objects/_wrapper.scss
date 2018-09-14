@@ -15,4 +15,18 @@
   &--content {
     padding: $gutter-content $gutter-content 0;
   }
+
+  &--fullwidth {
+    width: 100vw;
+    display: block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .o-wrapper {
+      padding: $gutter-content;
+    }
+  }
 }

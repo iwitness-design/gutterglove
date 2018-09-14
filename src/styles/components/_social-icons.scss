@@ -22,6 +22,11 @@
       background-size: auto 20px;
     }
 
+    &--fb-plain {
+      background-image: url('../assets/icons/ico-facebook-rounded.svg');
+      background-size: auto 26px;
+    }
+
     &--li {
       background-image: url('../assets/icons/ico-linkedin.svg');
       background-size: 18px;
@@ -31,10 +36,33 @@
       background-image: url('../assets/icons/ico-youtube.svg');
     }
 
+    &--twitter {
+      background-image: url('../assets/icons/ico-twitter.svg');
+      background-size: auto 23px;
+    }
+
+    &--bookmark {
+      background-image: url('../assets/icons/ico-bookmark.svg');
+      background-size: auto 22px;
+    }
+
     &:hover,
     &:focus {
       border-color: darken($color-crimson, 10%);
       opacity: 0.8;
     }
+  }
+
+  &--plain {
+    .c-social-icons__icon {
+      border: 0;
+    }
+  }
+
+  &__count {
+    color: $color-eternity;
+    letter-spacing: -0.02em;
+    font-size: 0.72727rem;
+    text-transform: uppercase;
   }
 }

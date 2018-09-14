@@ -2,14 +2,15 @@
    #BLOG POST INDEX
    ========================================================================== */
 
-.c-blogpost {
+.c-blogpost,
+.c-featured-simple {
   color: $color-white;
   position: relative;
   margin-bottom: $gutter-content;
 
   &::after {
     content: '';
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%,rgba(0, 0, 0, 0.4) 100%,rgba(0, 0, 0, 0) 99%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 100%,rgba(0, 0, 0, 0) 99%);
     position: absolute;
     top: 0;
     left: 0;
@@ -17,7 +18,13 @@
     height: 100%;
 
     @include bp-large {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%,rgba(0,0,0,0.2) 80%,rgba(0,0,0,0) 99%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 80%,rgba(0, 0, 0, 0) 99%);
+    }
+  }
+
+  &.-no-gradient {
+    &::after {
+      content: normal;
     }
   }
 
@@ -43,6 +50,20 @@
     }
   }
 
+  &.-right {
+    .c-blogpost__content,
+    .c-featured-simple__content {
+      left: auto;
+      right: 10%;
+      max-width: 550px;
+      padding: 2rem;
+
+      @include bp-large {
+        right: 150px;
+      }
+    }
+  }
+
   &__category,
   &__date {
     font-size: 0.81rem;
@@ -63,7 +84,6 @@
     margin: 22px 0;
 
     a {
-
       &:hover {
         text-decoration: none;
       }
@@ -84,6 +104,12 @@
       @include bp-medium {
         width: 326px;
         height: 326px;
+      }
+    }
+
+    &.-no-bg {
+      &::after {
+        content: normal;
       }
     }
   }

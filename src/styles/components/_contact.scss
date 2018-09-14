@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #CONTACT
+   ========================================================================== */
+
+.c-contact {
+  padding-bottom: 1.36rem;
+
+  .c-heading {
+    font-size: 2.2727rem;
+    padding-top: 1.3636rem;
+    padding-bottom: 0.4rem;
+  }
+
+  &__col {
+    &--form {
+      max-width: 670px;
+      padding-right: 5%;
+    }
+  }
+}

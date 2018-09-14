@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #REQUST PRODUCT FORM
+   ========================================================================== */
+
+.c-form {
+  &--product {
+    input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+    textarea {
+      border-color: $color-eternity;
+      color: $color-crimson;
+      font-size: 0.7272rem;
+
+      &:focus {
+        border-color: $color-crimson;
+      }
+    }
+
+    .c-form--2-cols {
+      .o-layout__item {
+        &:nth-child(2) {
+
+          @include bp-medium {
+            margin-top: 31px;
+          }
+
+          @include bp-large {
+            margin-top: 34px;
+          }
+        }
+      }
+    }
+  }
+}

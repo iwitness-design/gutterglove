@@ -1,0 +1,75 @@
+/* ==========================================================================
+   #COMPARISON TABLE
+   ========================================================================== */
+
+.c-comparison {
+  margin-bottom: 6.3636rem;
+
+  &__table-wrap {
+
+    @include bp-medium-max {
+      overflow: auto;
+      overflow-y: hidden;
+      position: relative;
+    }
+  }
+
+  &__table {
+    margin-top: 2.5rem;
+    min-width: 500px;
+
+    th {
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.2;
+      padding: 1.8rem 0;
+
+      @include bp-medium {
+        font-size: 1.409rem;
+      }
+
+      span {
+        color: $color-gray;
+        display: block;
+        font-weight: $font-regular;
+
+        @include bp-medium {
+          font-size: 1.1818rem;
+        }
+      }
+    }
+
+    td {
+      border: 1px solid $color-black-20;
+      width: 5%;
+      padding: 0.2rem 0.3rem;
+      text-align: center;
+
+      @include bp-medium {
+        padding: 0.5rem 1rem;
+      }
+
+      &:nth-child(1) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__yes {
+    color: $color-crimson;
+    font-size: 27px;
+    line-height: 0;
+  }
+
+  &__no {
+    color: $color-gray;
+    font-size: 60px;
+    line-height: 0;
+
+    span {
+      display: block;
+      margin-top: -5px;
+      line-height: 0;
+    }
+  }
+}

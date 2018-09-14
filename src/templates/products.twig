@@ -1,0 +1,261 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Products' %}
+
+{% block content %}
+  <div class="c-products">
+    <div class="c-products__featured-cols o-layout o-layout--guttered o-layout--3 ">
+      <div class="o-layout__item">
+        <img class="c-image c-image--rounded c-image--border" src="assets/images/temp/temp-products-damages.jpg" alt="" />
+        <p>
+          <strong>Defend your home from expensive damages</strong> that can be caused by clogged gutters.
+        </p>
+      </div>
+      <div class="o-layout__item">
+        <img class="c-image c-image--rounded c-image--border" src="assets/images/temp/temp-products-protect.jpg" alt="" />
+        <p>
+          <strong>Protect your pocketbook from inferior products</strong> that never last.
+        </p>
+      </div>
+      <div class="o-layout__item">
+        <img class="c-image c-image--rounded c-image--border" src="assets/images/temp/temp-products-weekends.jpg" alt="" />
+        <p>
+          <strong>Spend weekends with friends and family</strong>, not dangerous ladders and disgusting gutters.
+        </p>
+      </div>
+    </div>
+    <h2 class="c-heading c-heading--h1 c-heading--centered">What Makes Gutterglove <strong>the Best?</strong></h2>
+
+    <div class="o-layout c-about c-about--2cols">
+      <div class="o-layout__item c-about__col">
+        <h3 class="c-about__heading c-heading">Industry-leading<br /><strong>Debris Filtering</strong></h3>
+        <p>
+          Our patented, surgical grade Stainless Steel Micro-mesh blocks leaves, pine needles, and even roof grit from entering your gutters.
+        </p>
+      </div>
+      <img src="assets/images/static-about.png" alt="" class="c-about__image" />
+    </div>
+
+    <div class="c-featured-simple -right -no-gradient">
+      <img class="c-featured-simple__image c-featured-simple__image--fullwidth" src="assets/images/temp/products-lifetime.jpg" alt="" />
+      <div class="c-featured-simple__content">
+        <h3 class="c-featured-simple__heading -no-bg">Materials That<br /><strong>Last a Lifetime</strong></h3>
+        <p class="c-featured-simple__text">No plastic or uPVC here. Our products use aluminum and stainless steel to withstand the elements year after year.</p>
+      </div>
+    </div>
+
+    <div class="c-featured c-featured--fullwidth c-featured--img-right o-layout o-layout--guttered o-layout--2 -no-height">
+      <div class="c-featured__content o-layout__item">
+        <h3 class="c-featured__heading"><strong>Installs Easily</strong> on<br />Your Existing Gutters</h3>
+        <p class="small">
+          Our products are designed to fit any gutter-to-roof scenario. Seriously, they'll work on any.
+        </p>
+      </div>
+      <img src="assets/images/temp/products-installs-easily.jpg" alt="" class="c-featured__right o-layout__item" />
+    </div>
+
+    <div class="o-layout o-layout--2 o-layout--guttered">
+      <div class="o-layout__item c-featured c-featured--bg-img c-featured--box c-featured--centered -bg-img-bottom"  style="background-image: url('assets/images/temp/products-warranty.jpg');">
+        <div class="c-featured__content">
+          <h3 class="c-featured__heading">Backed by a <br /><strong>Long-term Warranty</strong></h3>
+          <p>
+            We stand behind our claims and offer some of the best warranties in the industry. 
+          </p>
+          <a href="#" class="c-link--red is-chevron">Learn More</a>
+        </div>
+      </div>
+      <div class="o-layout__item c-featured c-featured--bg-img c-featured--box c-featured--centered c-featured--white -bg-img-bottom" style="background-image: url('assets/images/temp/products-support.jpg');">
+        <div class="c-featured__content">
+          <h3 class="c-featured__heading">World Class,<br /><strong>U.S. Based Support.</strong></h3>
+          <p>
+            While install is simple, we know questions come up. Simply call our support team and they'll walk you through.
+          </p>
+          <a href="#" class="c-link--red is-chevron">Get Support</a>
+        </div>
+      </div>
+    </div>
+
+    {% block testimonials %}
+      {% include 'components/testimonials.twig' %}
+    {% endblock %}
+
+    <div class="c-comparison">
+      <h3 class="c-heading c-heading--centered c-heading--h1">Choosing the <strong>Right Product</strong></h3>
+      <div class="c-comparison__table-wrap">
+        <table class="c-comparison__table">
+          <thead>
+            <tr>
+              <th class="hide"></th>
+              <th>Foam <span>$</span></th>
+              <th>Plastic <span>$$</span></th>
+              <th>Steel Mesh <span>$$$</span></th>
+              <th>One Piece <span>$$$$</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem Ipsum Dolar</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum Dolar</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum Dolar</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+            </tr>
+            <tr>
+              <td>Dolar</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum Dolar</td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+            </tr>
+            <tr>
+              <td>Ipsum Dolar</td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+              <td class="c-comparison__yes"><span>&#10004;</span></td>
+              <td class="c-comparison__no"><span>&#215;</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="o-wrapper--fullwidth c-featured c-featured--bg-img c-featured--left-aligned c-products__featured-bg-img" style="background-image: url('assets/images/temp/products-diy.jpg');">
+      <div class="o-wrapper">
+        <div class="c-featured__content">
+          <h3 class="c-heading c-heading--border c-heading--border-top c-featured__heading c-heading--is-subhead"><strong>DIY</strong> Products</h3>
+          <p>
+            Easy install. Protection that lasts a lifetime.
+          </p>
+        </div>
+        <div class="o-layout o-layout--4 o-layout--guttered c-slider__content c-stores">
+          <div class="c-slider_col o-layout__item c-stores__item">
+            <a href="#" class="c-stores__link">
+              <span class="c-stores__logo-wrap">
+                <img class="c-stores__logo" src="assets/images/temp/logo-truevalue.png" alt=""  />
+              </span>
+              <span class="c-btn c-btn--primary c-btn__chevron c-btn--fullwidth">Shop Now</span>
+            </a>
+          </div>
+          <div class="c-slider_col o-layout__item c-stores__item">
+            <a href="#" class="c-stores__link">
+              <span class="c-stores__logo-wrap">
+                <img class="c-stores__logo" src="assets/images/temp/logo-homedepot.png" alt=""  />
+              </span>
+              <span class="c-btn c-btn--primary c-btn__chevron c-btn--fullwidth">Shop Now</span>
+            </a>
+          </div>
+          <div class="c-slider_col o-layout__item c-stores__item">
+            <a href="#" class="c-stores__link">
+              <span class="c-stores__logo-wrap">
+                <img class="c-stores__logo" src="assets/images/temp/logo-costco.png" alt=""  />
+              </span>
+              <span class="c-btn c-btn--primary c-btn__chevron c-btn--fullwidth">Shop Now</span>
+            </a>
+          </div>
+          <div class="c-slider_col o-layout__item c-stores__item">
+            <a href="#" class="c-stores__link">
+              <span class="c-stores__logo-wrap">
+                <img class="c-stores__logo" src="assets/images/temp/logo-sams.png" alt=""  />
+              </span>
+              <span class="c-btn c-btn--primary c-btn__chevron c-btn--fullwidth">Shop Now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="o-wrapper--fullwidth c-featured c-featured--bg-img c-featured--left-aligned c-products__featured-bg-img" style="background-image: url('assets/images/temp/products-pro.jpg');">
+      <div class="o-wrapper">
+        <div class="c-featured__content">
+          <h3 class="c-heading c-heading--border c-heading--border-top c-featured__heading c-heading--is-subhead"><strong>Pro</strong> Products</h3>
+          <p class="c-heading__subhead">
+            Pro quality for dealers<br />and contractors.
+          </p>
+        </div>
+        <ul class="c-featured__features-list o-list-bare o-layout o-layout--2 o-layout--guttered">
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-zbend">
+            Z-Bend technology.
+          </li>
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-leaves">
+            Blocks leaves, pine needles,<br />& roof grit.
+          </li>
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-frame">
+            Sturdy frame lasts longer in harsh environments.
+          </li>
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-nail">
+            Installs on any roof. Guaranteed.
+          </li>
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-mesh">
+            Features 316 micro-mesh.
+          </li>
+          <li class="o-layout__item c-featured__list-item c-featured__icon c-featured__icon-warranty">
+            Proudly backed by our<br />40 year warranty.
+          </li>
+        </ul>
+        <div class="c-products__request">
+          <h3 class="c-heading c-heading--centered c-heading--h1">Request <strong>Pro Product</strong></h3>
+          <form class="c-form c-form--product" id="c-product__form" action="#" method="post">
+            <div class="c-form--2-cols o-layout o-layout--2 o-layout--guttered">
+              <div class="o-layout__item">
+                <label for="c-product__fitst-name">Full Name *</label>
+                <input type="text" name="c-product__fitst-name" id="c-product__fitst-name" value="" required>
+              </div>
+              <div class="o-layout__item">
+                <input type="text" name="c-product__last-name" id="c-product__last-name" value="" placeholder="Last Name"  required>
+              </div>
+            </div>
+            <div>
+              <label for="c-product__email">Email Address *</label>
+              <input type="email" name="c-product__email" id="c-product__email" value="" required>
+            </div>
+            <div>
+              <label for="c-product__company">Company</label>
+              <input type="text" name="c-product__company" id="c-product__company" value="">
+            </div>
+            <div>
+              <label for="c-product__message">Your Message</label>
+              <input type="text" name="c-product__message" id="c-product__message" value="">
+            </div>
+            <div class="c-form__submit-wrap c-link c-link--red c-link--chevron">
+              <input type="submit" class="c-link c-link--red" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

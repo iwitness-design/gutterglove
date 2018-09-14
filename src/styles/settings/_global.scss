@@ -38,11 +38,13 @@ $color-white: #fff;
 $color-white-50: rgba(255, 255, 255, 0.5);
 $color-white-25: rgba(255, 255, 255, 0.25);
 $color-black: #000;
+$color-black-20: rgba(0, 0, 0, 0.2);
 $color-silver: #ccc;
 $color-silver-50: rgba(204, 204, 204, 0.5);
-$color-light-grey: #999;
-$color-medium-grey: #666;
-$color-dark-grey: #333;
+$color-gray: #868585;
+$color-light-gray: #999;
+$color-medium-gray: #666;
+$color-dark-gray: #333;
 $color-cod-gray: #151414;
 $color-cod-gray-70: rgba(21, 20, 20, 0.7);
 $color-gondola: #1b1a1a;
@@ -53,6 +55,7 @@ $color-alto-10: rgba(211, 211, 211, 0.2);
 $color-seashell: #f1f1f1;
 $color-eternity: #120d08;
 $color-silver-chalice: #b1b1b1;
+$color-thunder: #232123;
 
 // Text
 $color-bg: $color-white;
@@ -60,7 +63,7 @@ $color-text: $color-eternity;
 
 // Links
 $color-link: $color-white;
-$color-hover: darken( $color-white, 20% );
+$color-hover: darken($color-white, 20%);
 
 // Borders
 $color-border: $color-silver;

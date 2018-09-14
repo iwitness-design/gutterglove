@@ -8,15 +8,18 @@
  * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
  */
 
-h1 {
-  font-size: 2.25rem;
+h1,
+.c-heading--h1 {
+  font-size: 2.296rem;
 }
 
-h2 {
+h2,
+.c-heading--h2 {
   font-size: 1.166rem;
 }
 
-h3 {
+h3,
+.c-heading--h3 {
   font-size: 1.5rem;
 }
 
@@ -33,7 +36,17 @@ h6 {
 }
 
 .c-heading {
+  font-weight: normal;
   position: relative;
+  line-height: 1.2;
+
+  strong {
+    font-weight: $font-bold;
+  }
+
+  &--centered {
+    text-align: center;
+  }
 
   &--border {
     padding-bottom: 1.72rem;
@@ -47,5 +60,19 @@ h6 {
       width: 74px;
       height: 6px;
     }
+  }
+
+  &--border-top {
+    padding-bottom: 0;
+    padding-top: 1.72rem;
+
+    &::after {
+      bottom: auto;
+      top: 0;
+    }
+  }
+
+  &--is-subhead {
+    margin-bottom: 0;
   }
 }

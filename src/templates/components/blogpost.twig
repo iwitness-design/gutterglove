@@ -1,8 +1,18 @@
 <article class="c-blogpost">
-  <img class="c-blogpost__image c-blogpost__image--fullwidth" src="https://source.unsplash.com/1380x720/?architecture,people,nature" alt="" />
+  <img class="c-blogpost__image c-blogpost__image--fullwidth" src="assets/images/temp/home-about.jpg" alt="" />
   <div class="c-blogpost__content">
     {% if pageName == 'Home' %}
-    <span class="c-blogpost__category">ABOUT GUTTER GUARDS</span>
+    <div class="c-slider__controls-wrap">
+      <span class="c-blogpost__category">ABOUT GUTTER GUARDS</span>
+      <div class="c-slider__arrows glide__arrows" data-glide-el="controls">
+        <button class="c-slider__chevron c-slider__left glide__arrow glide__arrow--left" data-glide-dir="<">
+          <span class="u-hidden-visually">prev</span>
+        </button>
+        <button class="c-slider__chevron c-slider__right glide__arrow glide__arrow--right" data-glide-dir=">">
+          <span class="u-hidden-visually">next</span>
+        </button>
+      </div>
+    </div>
     {% else %}
     <span class="c-blogpost__date">April 19, 2018</span>
     {% endif %}
