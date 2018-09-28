@@ -1,0 +1,14 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Blog' %}
+
+{% block content %}
+  {% block blogpost %}
+    {% for i in range(1, 4) %}
+      {% include 'components/blogpost.twig' %}
+    {% endfor %}
+
+    <div class="c-page__bottom">
+      <a href="#" class="c-btn c-btn--primary">Load More</a>
+    </div>
+  {% endblock %}
+{% endblock %}

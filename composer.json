@@ -1,0 +1,29 @@
+{
+  "name": "iwitnessdesign/gutterglove",
+  "description": "Custom theme for GutterGlove",
+  "type": "wordpress-theme",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Tanner Moushey",
+      "email": "tanner@iwitnessdesign.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "../../plugins/{$name}/": [
+        "wpackagist-plugin/*",
+        "type:wordpress-plugin"
+      ]
+    }
+  },
+  "require": {
+    "wpackagist-plugin/timber-library": "1.*"
+  }
+}
