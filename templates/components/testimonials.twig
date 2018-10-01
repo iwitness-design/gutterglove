@@ -3,102 +3,21 @@
   <div class="c-slider__content c-testimonial__list">
     <div class="glide__track" data-glide-el="track">
       <div class="glide__slides">
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
-        <div class="c-slider__col glide__slide">
-          <p class="c-rating c-rating--5">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </p>
-          <p class="c-testimonial__name">
-            Ralph	Washington
-          </p>
-          <h4 class="c-heading c-testimonial__list-heading">Stainless steel quality</h4>
-          <p class="c-testimonial__text">
-            Much, much better than the plastic gutter guard product installed a few years back.
-          </p>
-        </div>
+        {% for testimonial in testimonials %}
+          <div class="c-slider__col glide__slide">
+            <p class="c-rating c-rating--5">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </p>
+            <p class="c-testimonial__name u-clearfix">
+              <span class="u-float-right">{{ testimonial.get_field('location') }}</span>
+              <span class="u-float-left">{{ testimonial.get_field('name') }}</span>
+            </p>
+            <h4 class="c-heading c-testimonial__list-heading">{{ testimonial.title }}</h4>
+            <p class="c-testimonial__text">
+              {{ testimonial.content }}
+            </p>
+          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="c-slider__arrows glide__arrows" data-glide-el="controls">

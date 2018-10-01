@@ -21,9 +21,11 @@
         "wpackagist-plugin/*",
         "type:wordpress-plugin"
       ]
-    }
+    },
+    "vendor/webdevstudios/cmb2": ["webdevstudios/cmb2"]
   },
   "require": {
-    "wpackagist-plugin/timber-library": "1.*"
+    "wpackagist-plugin/timber-library": "1.*",
+    "webdevstudios/cmb2": "2.*"
   }
 }
