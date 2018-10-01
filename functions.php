@@ -37,6 +37,9 @@ Timber::$autoescape = false;
  * You can move this to its own file and include here via php's include("MySite.php")
  */
 class GutterGlove extends Timber\Site {
+
+	const VERSION = '0.1.0';
+
 	/** Add timber support. */
 	public function __construct() {
 		add_action( 'after_setup_theme', array( $this, 'theme_supports' ) );
@@ -57,10 +60,10 @@ class GutterGlove extends Timber\Site {
 	}
 
 	public function scripts() {
-		wp_enqueue_script( 'gutterglove-vender', get_stylesheet_directory_uri() . '/dist/scripts/vendor.js' );
-		wp_enqueue_script( 'gutterglove', get_stylesheet_directory_uri() . '/dist/scripts/app.bundle.js', array( 'gutterglove-vender' ) );
+		wp_enqueue_script( 'gutterglove-vender', get_stylesheet_directory_uri() . '/dist/scripts/vendor.js', array(), self::VERSION, true );
+		wp_enqueue_script( 'gutterglove', get_stylesheet_directory_uri() . '/dist/scripts/app.bundle.js', array( 'gutterglove-vender', 'jquery' ), self::VERSION, true );
 		wp_enqueue_style( 'titillium', 'https://fonts.googleapis.com/css?family=Titillium+Web:400,700' );
-		wp_enqueue_style( 'gutterglove', get_stylesheet_directory_uri() . '/dist/styles/main.css',  array( ) );
+		wp_enqueue_style( 'gutterglove', get_stylesheet_directory_uri() . '/dist/styles/main.css',  array() );
 	}
 
 	/** This is where you add some context
@@ -150,3 +153,11 @@ class GutterGlove extends Timber\Site {
 }
 
 new GutterGlove();
+
+function gg_contact_form() {
+	echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true" tabindex="100"]' );
+}
+
+function gg_pro_form() {
+	echo do_shortcode( '[gravityform id="2" title="false" description="false" ajax="true" tabindex="100"]' );
+}

@@ -1,27 +1,38 @@
 <div class="c-hero c-hero--page {% if pageName == 'Blog' %}c-hero--content-overlap{% endif %}">
   <div class="c-hero__wrap">
     {% if pageName == 'Blog - Single' %}
-    <img class="c-hero__image" src="{{ site.theme.uri }}/dist/assets/images/temp/home-about.jpg" alt="" />
+        {% if post.thumbnail %}
+            <img class="c-hero__image" src="{{ post.thumbnail.src }}" alt="" />
+        {% else %}
+            <img class="c-hero__image" src="{{ site.theme.uri }}/dist/assets/images/temp/home-about.jpg" alt="" />
+        {% endif %}
     {% else %}
-    <img class="c-hero__image" src="{{ site.theme.uri }}/dist/assets/images/temp/hero-blog.jpg" alt="" />
+        {% if post.thumbnail %}
+            <img class="c-hero__image" src="{{ post.thumbnail.src }}" alt="" />
+        {% else %}
+            <img class="c-hero__image" src="{{ site.theme.uri }}/dist/assets/images/temp/hero-blog.jpg" alt="" />
+        {% endif %}
     {% endif %}
     <div class="c-hero__content">
       {% if pageName == 'Blog - Single' %}
         <div class="c-hero__caption  c-hero__caption--border">
           <p class="c-hero__date">
-            April 19, 2018
+            {{ post.date }}
           </p>
-          <h1 class="c-hero__heading c-hero__heading--border-bottom">Avoiding Damage of Clogged Gutters</h1>
+          <h1 class="c-hero__heading c-hero__heading--border-bottom">{{  post.title }}</h1>
         </div>
-      {% else %}
+      {% elseif pageName == 'Blog' %}
         <div class="c-hero__caption c-hero__caption--border">
           <h1 class="c-hero__heading c-hero__heading--is-sub c-hero__heading--border-bottom">ABOUT GUTTER GUARDS</h1>
           <p class="c-hero__subhead">
-            What we’re working on and thinking about.
+            Everything you need to know to protect your home.
           </p>
         </div>
+      {% else %}
+        <div class="c-hero__caption  c-hero__caption--border">
+          <h1 class="c-hero__heading c-hero__heading--border-bottom">{{  post.title }}</h1>
+        </div>
       {% endif %}
-      <a href="#" class="c-link c-link--red c-link--icon c-link--icon-subscribe">Subscribe</a>
     </div>
   </div>
 </div>

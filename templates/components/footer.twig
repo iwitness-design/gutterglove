@@ -1,59 +1,69 @@
 <footer class="c-footer">
-  <div class="c-footer__top o-wrapper">
-    <div class="c-footer__border">
-      <h3 class="c-footer__heading">Ready to start your project?</h3>
-      <p>
-        Explore our national brands to find the one that's best for you.
-      </p>
-      <a href="#" class="c-more c-link--red is-chevron">Explore Our Products</a>
-    </div>
-  </div>
-  <div class="c-footer__bottom">
-    <div class="o-wrapper o-layout c-footer__cols">
-      <div class="c-footer__col o-layout__item">
-        <a href="/" rel="home" class="c-sitename gutterglove"><span class="u-hidden-visually">Gutterglove</span></a>
-        <div class="c-social-icons">
-          <a href="#" class="c-social-icons__icon c-social-icons__icon--fb"><span class="u-hidden-visually">Facebook</span></a>
-          <a href="#" class="c-social-icons__icon c-social-icons__icon--li"><span class="u-hidden-visually">LinkedIn</span></a>
-          <a href="#" class="c-social-icons__icon c-social-icons__icon--yt"><span class="u-hidden-visually">YouTube</span></a>
-        </div>
-        <div class="c-footer__text">
-          <p>
-            Gutterglove gutter guard products are protected by many US and Canadian patents including #7,310,912; #7,975,435; #2,747,704; #8,479,454; #9,021,747.
-          </p>
-        </div>
-      </div>
-      <div class="c-footer__col o-layout__item">
-        <h3 class="c-footer__heading">Contact</h3>
-        <a href="tel:+19166245000" class="phone c-link--red">916.624.5000</a>
-        <a href="mailto:info@Gutterglove.com" class="email c-link--red">info@Gutterglove.com</a>
-        <address>
-          8860 Industrial Blvd., Suite 140
-          Roseville, CA. 95678
-        </address>
-      </div>
-      <div class="c-footer__col o-layout__item">
-        <h3 class="c-footer__heading">Company</h3>
-        <nav class="c-footer__nav">
-          <ul class="menu">
-            <li class="menu-item"><a href="#">About Gutter Guards</a></li>
-            <li class="menu-item"><a href="#">Contractor Program</a></li>
-            <li class="menu-item"><a href="#">Support</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="c-footer__col o-layout__item">
-        <h3 class="c-footer__heading">Products</h3>
-        <nav class="c-footer__nav">
-          <ul class="menu">
-            <li class="menu-item"><a href="#">Pro-grade Products</a></li>
-            <li class="menu-item"><a href="#">DIY Products</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="c-footer__copyright">
-    <p>Copyright &copy; {{"now"|date('Y')}} All Rights Reserved</p>
-  </div>
+	<div class="c-footer__top o-wrapper">
+		<div class="c-footer__border">
+			{% if pageName == 'Products' %}
+
+				<h3 class="c-footer__heading">Want to learn more about gutter guards?</h3>
+				<p>
+					We've compiled everything you need to know.
+				</p>
+				<a href="/blog/" class="c-more c-link--red is-chevron">About Gutter Guards</a>
+			{% else %}
+				<h3 class="c-footer__heading">Find the Right Gutter Guard for Your Home.</h3>
+				<p>
+					Explore our national brands to find the one that's best for you.
+				</p>
+				<a href="/products/" class="c-more c-link--red is-chevron">Explore Our Products</a>
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="c-footer__bottom">
+		<div class="o-wrapper o-layout c-footer__cols">
+			<div class="c-footer__col o-layout__item">
+				<a href="/" rel="home" class="c-sitename gutterglove"><span class="u-hidden-visually">Gutterglove</span></a>
+				<div class="c-social-icons">
+					<a href="#" class="c-social-icons__icon c-social-icons__icon--fb"><span class="u-hidden-visually">Facebook</span></a>
+					<a href="#" class="c-social-icons__icon c-social-icons__icon--li"><span class="u-hidden-visually">LinkedIn</span></a>
+					<a href="#" class="c-social-icons__icon c-social-icons__icon--yt"><span class="u-hidden-visually">YouTube</span></a>
+				</div>
+				<div class="c-footer__text">
+					<p>
+						Gutterglove gutter guard products are protected by many US and Canadian patents including #7,310,912; #7,975,435; #2,747,704; #8,479,454; #9,021,747.
+					</p>
+				</div>
+			</div>
+			<div class="c-footer__col o-layout__item">
+				<h3 class="c-footer__heading">Contact</h3>
+				<a href="tel:+19166245000" class="phone c-link--red">916.624.5000</a>
+				<a href="mailto:info@Gutterglove.com" class="email c-link--red">info@Gutterglove.com</a>
+				<address>
+					8860 Industrial Blvd., Suite 140
+					Roseville, CA. 95678
+				</address>
+			</div>
+			<div class="c-footer__col o-layout__item">
+				<h3 class="c-footer__heading">Company</h3>
+				<nav class="c-footer__nav">
+					<ul class="menu">
+						<li class="menu-item"><a href="#">About Gutter Guards</a></li>
+						<li class="menu-item"><a href="#">Contractor Program</a></li>
+						<li class="menu-item"><a href="#">Support</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="c-footer__col o-layout__item">
+				<h3 class="c-footer__heading">Products</h3>
+				<nav class="c-footer__nav">
+					<ul class="menu">
+						<li class="menu-item"><a href="#">Pro-grade Products</a></li>
+						<li class="menu-item"><a href="#">DIY Products</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="c-footer__copyright">
+		<p>Copyright &copy; {{ "now"|date('Y') }} All Rights Reserved</p>
+	</div>
 </footer>

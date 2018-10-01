@@ -9,6 +9,7 @@
   padding: 2.272rem;
   margin-bottom: $gutter-content;
 
+
   &__content {
     position: relative;
     line-height: 1.25;
@@ -42,6 +43,11 @@
     font-weight: $font-regular;
     font-size: 2.2963rem;
     line-height: 1;
+
+    &__section {
+      text-align: center;
+      margin: .75rem auto 2rem;
+    }
   }
 
   p {
@@ -58,6 +64,7 @@
   }
 
   &--box {
+    cursor: pointer;
     .c-featured__content {
       max-width: 442px;
     }

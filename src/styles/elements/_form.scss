@@ -78,3 +78,58 @@ label {
     }
   }
 }
+
+body .gform_wrapper {
+
+  .hide-labels {
+    label {
+      @include hidden-visually();
+    }
+  }
+
+  textarea {
+    padding: 15px;
+  }
+
+  .top_label {
+    .gfield_label {
+      font-weight: normal;
+    }
+  }
+
+  .gform_footer {
+    text-align: right;
+    position: relative;
+    color: $color-crimson;
+    width: 97.5%;
+    padding: 0;
+
+    .gform_ajax_spinner {
+      position: absolute;
+      right: 5.5em;
+      top: 10px;
+    }
+
+    &::after {
+      content: '';
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      vertical-align: middle;
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    input[type=submit] {
+      color: $color-crimson;
+    }
+  }
+}

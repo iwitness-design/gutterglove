@@ -1,0 +1,42 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Blog - Single' %}
+
+{% block content %}
+  <div class="o-wrapper__article">
+    <article class="c-article">
+      <div class="c-article__content">
+        {{ post.content }}
+      </div>
+      <div class="c-article__pagination o-layout o-layout--guttered ">
+        {% if post.prev %}
+          <a href="{{ post.prev.link }}" class="c-link--red is-chevron is-chevron--back">Previous</a>
+        {% endif %}
+
+        {% if post.next %}
+          <a href="{{ post.next.link }}" class="c-link--red is-chevron">Next</a>
+        {% endif %}
+      </div>
+      <aside class="c-article__social">
+        <div class="c-social-icons c-social-icons--plain">
+          <div class="addthis_inline_share_toolbox"></div>
+
+          {% if 0 %}
+            <span class="c-social-icons__count">11.2K</span>
+            <a href="https://twitter.com/intent/tweet?text=testing" class="c-social-icons__icon c-social-icons__icon--twitter" target="_blank">
+              <span class="u-hidden-visually">Twitter</span>
+            </a>
+            <a href="#" class="c-social-icons__icon c-social-icons__icon--fb-plain">
+              <span class="u-hidden-visually">Facebook</span>
+            </a>
+            <a href="#" class="c-social-icons__icon c-social-icons__icon--bookmark">
+              <span class="u-hidden-visually">Bookmark</span>
+            </a>
+          {% endif %}
+        </div>
+      </aside>
+    </article>
+  </div>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bb1df8ba98c0cb0"></script>
+{% endblock %}

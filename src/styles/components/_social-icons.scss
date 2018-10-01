@@ -53,6 +53,38 @@
     }
   }
 
+  .at-svc-facebook,
+  .at-svc-twitter {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+    border: 1px solid $color-crimson;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    margin-right: 12px;
+    transition: $global-transition;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.4;
+    }
+
+    .at-icon-wrapper {
+      display: none;
+    }
+  }
+
+  .at-svc-facebook {
+    background-image: url('../assets/icons/ico-facebook-rounded.svg');
+    background-size: auto 26px;
+  }
+
+  .at-svc-twitter {
+    background-image: url('../assets/icons/ico-twitter.svg');
+    background-size: auto 23px;
+  }
+
   &--plain {
     .c-social-icons__icon {
       border: 0;

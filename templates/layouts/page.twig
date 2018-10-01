@@ -2,7 +2,13 @@
 {% set pageName = '<%= pageName %>' %}
 
 {% block content %}
-  <h1>Hello <span class="js-greeting"></span></h1>
+  <div class="o-wrapper__article">
+    <article class="c-article">
+      <div class="c-article__content">
+        {{ post.content }}
+      </div>
+    </article>
+  </div>
 {% endblock %}
 
 

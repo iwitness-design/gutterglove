@@ -2,8 +2,16 @@
    #REQUST PRODUCT FORM
    ========================================================================== */
 
-.c-form {
-  &--product {
+.c-products {
+  form {
+
+    .name_first,
+    .name_last {
+      label {
+        @include hidden-visually();
+      }
+    }
+
     input:not([type='checkbox']):not([type='radio']):not([type='submit']),
     textarea {
       border-color: $color-eternity;
