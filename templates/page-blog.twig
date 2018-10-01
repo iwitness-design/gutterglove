@@ -3,12 +3,10 @@
 
 {% block content %}
   {% block blogpost %}
-    {% for i in range(1, 4) %}
+    {% for p in posts %}
       {% include 'components/blogpost.twig' %}
     {% endfor %}
 
-    <div class="c-page__bottom">
-      <a href="#" class="c-btn c-btn--primary">Load More</a>
-    </div>
+    {% include 'components/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
   {% endblock %}
 {% endblock %}

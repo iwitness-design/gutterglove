@@ -1,0 +1,11 @@
+{% if posts.pagination.pages is not empty %}
+	<nav class="c-page__bottom">
+		{% if pagination.prev %}
+			<a href="{{ pagination.prev.link }}" class="c-btn c-btn--primary">Previous</a>
+		{% endif %}
+
+		{% if pagination.next %}
+			<a href="{{ pagination.next.link }}" class="c-btn c-btn--primary">Load More</a>
+		{% endif %}
+	</nav>
+{% endif %}

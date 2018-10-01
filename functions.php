@@ -47,6 +47,7 @@ class GutterGlove extends Timber\Site {
 		add_action( 'wp_enqueue_scripts', array( $this, 'scripts' ) );
 		add_action( 'cmb2_admin_init', array( $this, 'testimonial_meta' ) );
 		add_filter( 'timber_context', array( $this, 'testimonial_content' ) );
+		add_filter( 'timber_get_preview', array( $this, 'post_preview' ) );
 		parent::__construct();
 	}
 
@@ -147,11 +148,15 @@ class GutterGlove extends Timber\Site {
 
 	public function testimonial_content( $context ) {
 
-		if ( is_home() || is_page( 'products' ) ) {
+		if ( is_front_page() || is_page( 'products' ) ) {
 			$context['testimonials'] = Timber::get_posts( 'post_type=testimonial&numberposts=30' );
 		}
 
 		return $context;
+	}
+
+	public function post_preview( $excerpt ) {
+		return $excerpt;
 	}
 }
 

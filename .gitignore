@@ -33,7 +33,6 @@ nbproject
 .idea
 
 # Folders to ignore
-temp
 tmp
 .tmp
 node_modules
