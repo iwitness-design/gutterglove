@@ -12,7 +12,6 @@ if (document.querySelector(('.hamburger'))) {
 }
 
 if (document.querySelector('.c-slider--carousel')) {
-  console.log('carousel');
   glideCarousel();
 }
 
