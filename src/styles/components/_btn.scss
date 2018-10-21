@@ -55,13 +55,15 @@
   &,
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &.active {
     text-decoration: none; /* [4] */
     color: $color-white;
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     background-color: darken($color-crimson, 5%);
   }
 }

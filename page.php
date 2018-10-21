@@ -24,6 +24,7 @@
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
+$context['action'] = empty( $_GET['action'] ) ? '' : $_GET['action'];
 
 if ( is_front_page() ) {
 	$context['posts'] = Timber::get_posts( 'post_type=post&numberposts=10');

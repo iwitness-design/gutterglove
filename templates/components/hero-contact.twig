@@ -7,18 +7,14 @@
       </div>
       <form id="c-contact__top-form" action="#" method="post">
         <ul class="o-list-bare c-hero__btn-list">
-          <li class="c-hero__btn-list--item">
-            <a href="#" class="c-btn c-btn--primary c-btn--bordered">Product Support</a>
-          </li>
-          <li class="c-hero__btn-list--item">
-            <a href="#" class="c-btn c-btn--primary c-btn--bordered">Becoming a Dealer</a>
-          </li>
-          <li class="c-hero__btn-list--item">
-            <a href="#" class="c-btn c-btn--primary c-btn--bordered">Employment Opportunities</a>
-          </li>
-          <li class="c-hero__btn-list--item">
-            <a href="#" class="c-btn c-btn--primary c-btn--bordered">Other</a>
-          </li>
+
+          {% set actions = { 'product-support': 'Product Support', 'become-a-dealer': 'Become a Dealer', 'employment-opportunities': 'Employment Opportunities', 'other': 'Other'} %}
+
+          {% for a, label in actions %}
+            <li class="c-hero__btn-list--item">
+              <a href="#contact-form" class="contact-form-action-toggle c-btn c-btn--primary c-btn--bordered {{ action == a ? 'active' }}" data-action="{{ a }}">{{ label }}</a>
+            </li>
+		  {% endfor %}
         </ul>
       </form>
     </div>
