@@ -6,6 +6,11 @@
 import hamburger from './modules/navToggle';
 import glideCarousel from './modules/carousel';
 import glideSlider from './modules/slider';
+import AOS from 'aos';
+
+AOS.init();
+
+console.log( AOS );
 
 if (document.querySelector(('.hamburger'))) {
   hamburger();
