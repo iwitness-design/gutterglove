@@ -8,7 +8,9 @@ import glideCarousel from './modules/carousel';
 import glideSlider from './modules/slider';
 import tippy from 'tippy.js'
 import AOS from 'aos';
+import MicroModal from 'micromodal';
 
+MicroModal.init();
 AOS.init();
 
 if (document.querySelector((

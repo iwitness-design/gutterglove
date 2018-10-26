@@ -91,6 +91,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.2.3",
     "aos": "^2.3.4",
+    "micromodal": "^0.3.2",
     "normalize-scss": "^7.0.1",
     "tippy.js": "^3.0.6"
   },

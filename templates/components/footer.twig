@@ -66,4 +66,43 @@
 	<div class="c-footer__copyright">
 		<p>Copyright &copy; {{ "now"|date('Y') }} All Rights Reserved</p>
 	</div>
+	<div class="modal micromodal-slide" id="support-modal" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" style="background: #efefef;" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<h2 class="modal__title" id="modal-1-title">
+						Which Product Do You Need Support For?
+					</h2>
+					<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<div class="o-wrapper">
+						<div class="o-layout o-layout--4 o-layout--guttered c-slider__content c-stores">
+							<div class="c-slider_col o-layout__item c-stores__item">
+							  <span class="c-stores__logo-wrap">
+								<img class="c-stores__logo" src="{{ site.theme.uri }}/dist/assets/images/temp/logo-truevalue.png" alt="" />
+							  </span>
+							</div>
+							<div class="c-slider_col o-layout__item c-stores__item">
+							  <span class="c-stores__logo-wrap">
+								<img class="c-stores__logo" src="{{ site.theme.uri }}/dist/assets/images/temp/logo-homedepot.png" alt="" />
+							  </span>
+							</div>
+							<div class="c-slider_col o-layout__item c-stores__item">
+							  <span class="c-stores__logo-wrap">
+								<img class="c-stores__logo" src="{{ site.theme.uri }}/dist/assets/images/temp/logo-costco.png" alt="" />
+							  </span>
+							</div>
+							<div class="c-slider_col o-layout__item c-stores__item">
+							  <span class="c-stores__logo-wrap">
+								<img class="c-stores__logo" src="{{ site.theme.uri }}/dist/assets/images/temp/logo-sams.png" alt="" />
+							  </span>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
 </footer>

@@ -10,19 +10,6 @@
       document.querySelector('html').classList.remove('no-js');
     </script>
     <script src="scripts/vendor.js" defer></script>
-    <script>
-      (function()
-      {
-        var p = 'scripts/';
-        var wm = window.webpackManifest = {
-          "smooth-scroll.polyfills.min-1F9x.c": "smooth-scroll.polyfills.min-1F9x.c.chunk.js"
-        };
-        Object.keys(wm).forEach(function(n)
-        {
-          wm[n] = p + wm[n]
-        });
-      })();
-    </script>
     <script src="scripts/app.bundle.js" defer></script>
 
   </head>
