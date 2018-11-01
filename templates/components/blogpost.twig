@@ -19,8 +19,6 @@
         </button>
       </div>
     </div>
-    {% else %}
-    <span class="c-blogpost__date">{{ p.date }}</span>
     {% endif %}
     <h2 class="c-blogpost__heading"><a href="{{ p.link }}">{{ p.title }}</a></h2>
     <p class="c-blogpost__text">{{ p.preview.read_more('').length(25) }}</p>

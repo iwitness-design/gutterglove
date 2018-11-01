@@ -10,7 +10,7 @@
 
   &::after {
     content: '';
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 100%,rgba(0, 0, 0, 0) 99%);
+    //background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 100%,rgba(0, 0, 0, 0) 99%);
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     height: 100%;
 
     @include bp-large {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 80%,rgba(0, 0, 0, 0) 99%);
+      //background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 80%,rgba(0, 0, 0, 0) 99%);
     }
   }
 

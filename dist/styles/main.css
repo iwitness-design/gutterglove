@@ -1169,6 +1169,12 @@ table {
 }
 
 @media (min-width: 768px) {
+  .o-layout--2.wide-gutter > .o-layout__item {
+    width: 47%;
+  }
+}
+
+@media (min-width: 768px) {
   .o-layout--3 > .o-layout__item {
     width: 32%;
   }
@@ -1317,6 +1323,10 @@ table {
   padding: 1.36rem;
 }
 
+.home .o-wrapper {
+  overflow: hidden;
+}
+
 /* ==========================================================================
    #ABOUT
    ========================================================================== */
@@ -1421,9 +1431,9 @@ table {
 .c-image-text__item {
   display: flex;
   align-items: center;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 1.27rem;
 }
 
@@ -1431,7 +1441,7 @@ table {
   border: 1px solid #e62525;
   border-radius: 50%;
   margin-right: 1.909rem;
-  max-width: 98px;
+  max-width: 93px;
 }
 
 .c-image-text__item p {
@@ -1547,19 +1557,11 @@ table {
 .c-blogpost::after,
 .c-featured-simple::after {
   content: '';
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0) 99%);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: 1024px) {
-  .c-blogpost::after,
-  .c-featured-simple::after {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 99%);
-  }
 }
 
 .c-blogpost.-no-gradient::after,
@@ -2408,7 +2410,7 @@ table {
 }
 
 .c-sitename {
-  background: url("../assets/images/logo.png") no-repeat left top;
+  background: url("../assets/images/logo-2x.png") no-repeat left top;
   background-size: contain;
   display: block;
   width: 100%;
@@ -2430,7 +2432,6 @@ table {
 
 .c-hero__wrap::after {
   content: '';
-  background: #000;
   opacity: 0.5;
   position: absolute;
   left: 0;
