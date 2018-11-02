@@ -111,7 +111,7 @@
     &--bg {
       &::after {
         content: '';
-        background: url('../assets/images/bg-heading.svg') no-repeat left top;
+        //background: url('../assets/images/bg-heading.svg') no-repeat left top;
         position: absolute;
         z-index: 1;
         width: 250px;

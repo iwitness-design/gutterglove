@@ -65,4 +65,20 @@
       background-size: auto;
     }
   }
+
+  .debris-filtering {
+    .c-featured-simple {
+      &__content {
+        margin-right: 35%;
+      }
+
+      &__image {
+        object-position: right;
+        @include bp-medium-max {
+          object-position: left;
+        }
+      }
+
+    }
+  }
 }

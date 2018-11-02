@@ -1647,7 +1647,6 @@ table {
 .c-blogpost__heading::after,
 .c-featured-simple__heading::after {
   content: '';
-  background: url("../assets/images/bg-heading.svg") no-repeat left top;
   position: absolute;
   z-index: -1;
   width: 250px;
@@ -2539,7 +2538,6 @@ table {
 
 .c-hero__caption--bg::after {
   content: '';
-  background: url("../assets/images/bg-heading.svg") no-repeat left top;
   position: absolute;
   z-index: 1;
   width: 250px;
@@ -3095,6 +3093,22 @@ table {
 @media (min-width: 1024px) {
   .c-products__featured-bg-img {
     background-size: auto;
+  }
+}
+
+.c-products .debris-filtering .c-featured-simple__content {
+  margin-right: 35%;
+}
+
+.c-products .debris-filtering .c-featured-simple__image {
+  -o-object-position: right;
+     object-position: right;
+}
+
+@media (max-width: 767px) {
+  .c-products .debris-filtering .c-featured-simple__image {
+    -o-object-position: left;
+       object-position: left;
   }
 }
 
