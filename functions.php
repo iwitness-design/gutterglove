@@ -37,7 +37,7 @@ Timber::$autoescape = false;
  */
 class GutterGlove extends Timber\Site {
 
-	const VERSION = '0.1.0';
+	const VERSION = '1.0.0';
 
 	/** Add timber support. */
 	public function __construct() {
