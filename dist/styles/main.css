@@ -566,6 +566,16 @@ dd, ol, ul {
   margin-left: 1rem;
 }
 
+@media (max-width: 767px) {
+  img + .c-hero__content,
+  .c-featured--bg-img + .c-featured__content,
+  img + .c-blogpost__content,
+  .c-featured--bg-img img + .c-featured__content,
+  .c-featured-simple {
+    text-shadow: 1px 1px 3px black;
+  }
+}
+
 /* ==========================================================================
    #BLOCKQUOTES
    ========================================================================== */
@@ -1438,10 +1448,8 @@ table {
 }
 
 .c-image-text__item img {
-  border: 1px solid #e62525;
-  border-radius: 50%;
   margin-right: 1.909rem;
-  max-width: 93px;
+  max-width: 70px;
 }
 
 .c-image-text__item p {

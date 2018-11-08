@@ -30,3 +30,13 @@ fieldset {
 dd, ol, ul {
   margin-left: 1rem;
 }
+
+@include bp-medium-max {
+  img + .c-hero__content,
+  .c-featured--bg-img + .c-featured__content,
+  img + .c-blogpost__content,
+  .c-featured--bg-img img + .c-featured__content,
+  .c-featured-simple {
+    text-shadow: 1px 1px 3px black;
+  }
+}
