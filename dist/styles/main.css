@@ -1440,16 +1440,18 @@ table {
 
 .c-image-text__item {
   display: flex;
-  align-items: center;
-  font-size: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.75em;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  margin-bottom: 1.27rem;
+  margin-bottom: 2.5rem;
+  vertical-align: top;
 }
 
 .c-image-text__item img {
   margin-right: 1.909rem;
-  max-width: 70px;
+  max-width: 50px;
+  margin-top: 2em;
 }
 
 .c-image-text__item p {
